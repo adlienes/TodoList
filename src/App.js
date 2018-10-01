@@ -34,7 +34,7 @@ renderItem(item){
 
   return(
 
-    <View key={item} style={{backgroundColor:'gray',height:100,margin:10,borderRadius:10,alignItems:'center',justifyContent:'center'}}>
+    <View key={item} style={{backgroundColor:'#4F6C73',height:100,margin:10,borderRadius:10,alignItems:'center',justifyContent:'center'}}>
       <Text style={{color:'white',fontSize:25}}>{item}</Text>
     </View>
   );
@@ -45,12 +45,12 @@ renderItem(item){
   render() {
     return (
       <View style={{flex:1,marginTop:Platform.OS=='ios' ? 21 : 0}}>
-        <View style={{backgroundColor:'yellow',height:100,flexDirection:'row',padding:8}}>
+        <View style={{backgroundColor:'#8EEAFF',height:100,flexDirection:'row',padding:8}}>
 
-        <View style={{backgroundColor:'red',flex:4,marginRight:5,justifyContent:'center'}}>
-            <TextInput value={this.state.toDo} onChangeText={(v)=> this.setState({toDo:v})} placeholder={'Listeye Eklemek İstediklerinizi Giriniz'} style={{height:30,backgroundColor:'white',borderRadius:10}}></TextInput>
+        <View style={{backgroundColor:'#8EEAFF',flex:4,marginRight:5,justifyContent:'center'}}>
+            <TextInput value={this.state.toDo} onChangeText={(v)=> this.setState({toDo:v})} placeholder={'Listeye Eklemek İstediklerinizi Giriniz'} style={{height:30,backgroundColor:'white',borderRadius:10,paddingLeft:5}}></TextInput>
         </View>
-        <View style={{backgroundColor:'pink',flex:1}}>
+        <View style={{backgroundColor:'#2FD7FF',flex:1,borderRadius:20}}>
           <MyButton onPress={this.addItem} Text={'EKLE'}></MyButton>
         </View>
 
